@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    a{
+        color: white;
+        text-decoration: none;
+        &:hover{
+        }
+    }
+}
+
+.container{
+    padding: 1rem 3rem;
+}
+
+.store{
+    .items{
+        display: flex;
+        gap: 2rem;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}

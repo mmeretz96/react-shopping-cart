@@ -1,0 +1,43 @@
+.navbar{
+    background-color: #272727;
+    color: white;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    .links{
+        display: flex;
+        gap: 2rem;
+        flex: 1;
+    }
+    .active{
+        font-weight: bold;
+    }
+
+    .cartLink{
+        position: relative;
+        width: 30px;
+        svg{
+            &:hover{
+                transform: scale(1.1);
+                cursor: pointer;
+            }
+        }
+    
+        .itemAmount{
+            position: absolute;
+            top: -7px;
+            right: 0px;
+            background-color: rgb(255, 106, 80);
+            width: 15px;
+            height: 15px;
+            font-size: 12px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+    }
+}
+

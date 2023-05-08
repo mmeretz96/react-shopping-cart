@@ -1,0 +1,58 @@
+.card{
+    width: 30%;
+    background-color: #9494943d;
+    box-sizing: border-box;
+    border-radius: 5px;
+
+    .bottom{
+        padding: 1rem;
+        font-weight: bold;
+        font-size: 18px;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .row{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .rowCenter{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .col{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+   
+    button{
+        background-color: rgb(46, 108, 221);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 0.5rem 1rem;
+    }
+
+    .danger{
+        background-color: red;
+    }
+
+    .button-lg{
+        width: 100%;
+    }
+
+    img{
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 5px 5px 0 0;
+    }
+}
