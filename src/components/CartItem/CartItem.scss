@@ -1,0 +1,26 @@
+.cart-item{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid black;
+    justify-content: space-between;
+    .row{
+        flex: 1;
+        display: flex;
+        gap: 1em;
+        padding: 1em 5px;
+        .name{
+            flex: 1;
+        }
+        .quant{
+            font-weight: bold;
+        }
+        .price{
+            font-weight: bold;
+        }
+    }
+    button.danger{
+        background-color: white;
+        outline: 1px solid red;
+        color: red;
+    }
+}

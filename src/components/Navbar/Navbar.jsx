@@ -1,8 +1,7 @@
 import { Link, useLocation, useParams } from "react-router-dom";
 import "./Navbar.scss";
 import { useShoppingCart } from "../../context/ShoppingCartContext";
-
-const Navbar = () => {
+const Navbar = (props) => {
   let location = useLocation().pathname;
   const { getNumberOfItems } = useShoppingCart();
   const itemAmount = getNumberOfItems();
@@ -19,7 +18,7 @@ const Navbar = () => {
           About
         </Link>
       </div>
-      <div className="cartLink">
+      <div className="cartLink" onClick={() => props.toggleCart()}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           height="24px"

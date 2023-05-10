@@ -8,6 +8,12 @@ export function useShoppingCart() {
 
 export function ShoppingCartProvider({ children }) {
   const [cartItems, setCartItems] = useState([]);
+  const [cartOpen, setCartOpen] = useState(false);
+
+  const toggleCart = () => {
+    setCartOpen(!cartOpen);
+    console.log(cartOpen);
+  };
 
   const getItemQuantity = (id) => {
     return cartItems.find((item) => item.id === id)?.quantity || 0;
@@ -43,6 +49,9 @@ export function ShoppingCartProvider({ children }) {
 
   const getNumberOfItems = () => cartItems.length;
 
+  const getCartOpen = () => {
+    return cartOpen;
+  };
   return (
     <ShoppingCartContext.Provider
       value={{
@@ -51,6 +60,9 @@ export function ShoppingCartProvider({ children }) {
         decreaseQuantity,
         removeFromCart,
         getNumberOfItems,
+        cartItems,
+        toggleCart,
+        getCartOpen,
       }}
     >
       {children}

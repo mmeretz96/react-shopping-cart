@@ -1,0 +1,37 @@
+.cart-container{
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    .overlay{
+        background-color: rgba(0, 0, 0, 0.63);
+        flex: 1;
+    }
+    .cart{
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+        background-color: white;
+        box-sizing: border-box;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;  
+        .top{
+            flex: 1;
+        }
+        .sum{
+            margin-top: 1em;
+            font-weight: bold;
+            padding: 1em 5px;
+            display: flex;
+            justify-content: space-between;
+        }
+        button{
+            background-color: rgb(46, 108, 221);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+        }
+    }
+}
